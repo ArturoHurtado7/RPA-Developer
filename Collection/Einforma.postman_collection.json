@@ -1,0 +1,487 @@
+{
+	"info": {
+		"_postman_id": "abac039e-8a0c-4244-929c-f938c5a43373",
+		"name": "Einforma",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET /Empresa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": [
+				{
+					"name": "Respuesta con n menor a 1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/Empresa?busqueda=Pepito&n=-2&departamento=vichada",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"Empresa"
+							],
+							"query": [
+								{
+									"key": "busqueda",
+									"value": "Pepito"
+								},
+								{
+									"key": "n",
+									"value": "-2"
+								},
+								{
+									"key": "departamento",
+									"value": "vichada"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "107"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/1.0.1 Python/3.7.6"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 23 Feb 2021 14:52:11 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Codigo\": 901,\n    \"Mensaje\": \"Error en los datos: {'n': ['Must be greater than or equal to 1.']}\"\n}"
+				},
+				{
+					"name": "Respuesta 5 valores con departamento",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/Empresa?busqueda=Santa Fe&n=5&departamento=bogota",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"Empresa"
+							],
+							"query": [
+								{
+									"key": "busqueda",
+									"value": "Santa Fe"
+								},
+								{
+									"key": "n",
+									"value": "5"
+								},
+								{
+									"key": "departamento",
+									"value": "bogota"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4089"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/1.0.1 Python/3.7.6"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 23 Feb 2021 14:32:39 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Busqueda\": {\n        \"String Busqueda\": \"Santa Fe\",\n        \"Id Departamento\": \"11\",\n        \"Departamento\": \"bogota\",\n        \"Numero Empresas\": 5\n    },\n    \"Informacion\": {\n        \"COOPERATIVA MULTIACTIVA NACIONAL DE CREDITOS SANTAFE LTDA\": {\n            \"Informacion_Básica\": {\n                \"Forma_Juridica\": \"ORGANIZACION DE ECONOMIA SOLIDARIA\",\n                \"Departamento\": \"BOGOTÁ\",\n                \"Actividad_CIIU\": \"S9499 - ACTIVIDADES DE OTRAS ASOCIACIONES N C P\",\n                \"Fecha_Constitucion\": \"02/01/1997\"\n            },\n            \"Actualizaciones_importantes\": {\n                \"Fecha_Ultimo_Dato\": \"18/08/2020\",\n                \"Fecha_Camara\": \"31/10/2020\"\n            },\n            \"Archivos\": {\n                \"Screenshot_Path\": \"ScreenShots/Santa Fe_screenshot0.png\",\n                \"Link_Empresa\": \"https://www.einforma.co/servlet/app/portal/ENTP/prod/ETIQUETA_EMPRESA/nif/1700091537100000\"\n            }\n        },\n        \"CACHARRERIA SANTA FE LTDA\": {\n            \"Informacion_Básica\": {\n                \"Forma_Juridica\": \"SOCIEDAD LIMITADA\",\n                \"Departamento\": \"BOGOTÁ\",\n                \"Actividad_CIIU\": \"G4761 - COMERCIO AL POR MENOR DE LIBROS PERIODICOS MATERIALES Y ARTICULOS DE PAPELERIA Y ESCRITORIO EN ESTABLECIMIENTOS ESPECIALIZADOS\",\n                \"Fecha_Constitucion\": \"18/07/1975\"\n            },\n            \"Actualizaciones_importantes\": {\n                \"Fecha_Ultimo_Dato\": \"06/11/2012\",\n                \"Fecha_Camara\": \"08/09/2006\"\n            },\n            \"Archivos\": {\n                \"Screenshot_Path\": \"ScreenShots/Santa Fe_screenshot1.png\",\n                \"Link_Empresa\": \"https://www.einforma.co/servlet/app/portal/ENTP/prod/ETIQUETA_EMPRESA/nif/1700114118800000\"\n            }\n        },\n        \"INVERSIONES SANTA FE LTDA\": {\n            \"Informacion_Básica\": {\n                \"Forma_Juridica\": \"SOCIEDAD LIMITADA\",\n                \"Departamento\": \"BOGOTÁ\",\n                \"Actividad_CIIU\": \"K6499 - OTRAS ACTIVIDADES DE SERVICIO FINANCIERO EXCEPTO LAS DE SEGUROS Y PENSIONES N C P\",\n                \"Fecha_Constitucion\": \"18/11/1965\"\n            },\n            \"Actualizaciones_importantes\": {\n                \"Fecha_Ultimo_Dato\": \"06/11/2012\",\n                \"Fecha_Camara\": \"08/09/2006\"\n            },\n            \"Archivos\": {\n                \"Screenshot_Path\": \"ScreenShots/Santa Fe_screenshot2.png\",\n                \"Link_Empresa\": \"https://www.einforma.co/servlet/app/portal/ENTP/prod/ETIQUETA_EMPRESA/nif/1700125292800000\"\n            }\n        },\n        \"CONSTRUCCIONES SANTA FE LTDA\": {\n            \"Informacion_Básica\": {\n                \"Forma_Juridica\": \"SOCIEDAD LIMITADA\",\n                \"Departamento\": \"BOGOTÁ\",\n                \"Actividad_CIIU\": \"F4111 - CONSTRUCCION DE EDIFICIOS RESIDENCIALES\",\n                \"Fecha_Constitucion\": \"17/03/1971\"\n            },\n            \"Actualizaciones_importantes\": {\n                \"Fecha_Ultimo_Dato\": \"25/04/2020\",\n                \"Fecha_Camara\": \"08/09/2006\"\n            },\n            \"Archivos\": {\n                \"Screenshot_Path\": \"ScreenShots/Santa Fe_screenshot3.png\",\n                \"Link_Empresa\": \"https://www.einforma.co/servlet/app/portal/ENTP/prod/ETIQUETA_EMPRESA/nif/1700130945100000\"\n            }\n        },\n        \"OPERACION SANTA FE LTDA\": {\n            \"Informacion_Básica\": {\n                \"Forma_Juridica\": \"SOCIEDAD LIMITADA\",\n                \"Departamento\": \"BOGOTÁ\",\n                \"Actividad_CIIU\": \"N8299 - OTRAS ACTIVIDADES DE SERVICIO DE APOYO A LAS EMPRESAS N C P\",\n                \"Fecha_Constitucion\": \"03/04/1991\"\n            },\n            \"Actualizaciones_importantes\": {\n                \"Fecha_Ultimo_Dato\": \"02/01/2021\",\n                \"Fecha_Camara\": \"23/02/2007\"\n            },\n            \"Archivos\": {\n                \"Screenshot_Path\": \"ScreenShots/Santa Fe_screenshot4.png\",\n                \"Link_Empresa\": \"https://www.einforma.co/servlet/app/portal/ENTP/prod/ETIQUETA_EMPRESA/nif/1700144345100000\"\n            }\n        }\n    }\n}"
+				},
+				{
+					"name": "Respuesta con tipo de datos de entrada erroneos",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/Empresa?busqueda=Pepito&n=a&departamento=bogota",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"Empresa"
+							],
+							"query": [
+								{
+									"key": "busqueda",
+									"value": "Pepito"
+								},
+								{
+									"key": "n",
+									"value": "a"
+								},
+								{
+									"key": "departamento",
+									"value": "bogota"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "92"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/1.0.1 Python/3.7.6"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 23 Feb 2021 14:44:59 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Codigo\": 901,\n    \"Mensaje\": \"Error en los datos: {'n': ['Not a valid integer.']}\"\n}"
+				},
+				{
+					"name": "Respuesta Sin informacion",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/Empresa?busqueda=pepito pepitos&n=5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"Empresa"
+							],
+							"query": [
+								{
+									"key": "busqueda",
+									"value": "pepito pepitos"
+								},
+								{
+									"key": "n",
+									"value": "5"
+								},
+								{
+									"key": "departamento",
+									"value": "bogota",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "306"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/1.0.1 Python/3.7.6"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 23 Feb 2021 14:26:07 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Busqueda\": {\n        \"String Busqueda\": \"pepito pepitos\",\n        \"Id Departamento\": \"00\",\n        \"Departamento\": null,\n        \"Numero Empresas\": 5\n    },\n    \"Informacion\": {\n        \"Respuesta\": {\n            \"Codigo\": 902,\n            \"Mensaje\": \"No existen datos de retorno\"\n        }\n    }\n}"
+				},
+				{
+					"name": "Respuesta con departamento no valido",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/Empresa?busqueda=Pepito&n=12&departamento=Florida",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"Empresa"
+							],
+							"query": [
+								{
+									"key": "busqueda",
+									"value": "Pepito"
+								},
+								{
+									"key": "n",
+									"value": "12"
+								},
+								{
+									"key": "departamento",
+									"value": "Florida"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "97"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/1.0.1 Python/3.7.6"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 23 Feb 2021 14:47:45 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Codigo\": 901,\n    \"Mensaje\": \"Error en los datos: {'departamento': ['Invalid value.']}\"\n}"
+				},
+				{
+					"name": "Respuesta Solicitando 14 valores, y solo hay 3 en existencia",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/Empresa?busqueda=Pepito&n=14",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"Empresa"
+							],
+							"query": [
+								{
+									"key": "busqueda",
+									"value": "Pepito"
+								},
+								{
+									"key": "n",
+									"value": "14"
+								},
+								{
+									"key": "departamento",
+									"value": "bogota",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2501"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/1.0.1 Python/3.7.6"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 23 Feb 2021 14:42:21 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Busqueda\": {\n        \"String Busqueda\": \"Pepito\",\n        \"Id Departamento\": \"00\",\n        \"Departamento\": null,\n        \"Numero Empresas\": 14\n    },\n    \"Informacion\": {\n        \"LOPEZ GUALDRON JESUS ANTONIO\": {\n            \"Informacion_Básica\": {\n                \"Forma_Juridica\": \"PERSONA NATURAL\",\n                \"Departamento\": \"SANTANDER\",\n                \"Actividad_CIIU\": \"G4772 - COMERCIO AL POR MENOR DE TODO TIPO DE CALZADO Y ARTICULOS DE CUERO Y SUCEDANEOS DEL CUERO EN ESTABLECIMIENTOS ESPECIALIZADOS\",\n                \"Fecha_Constitucion\": \"10/06/2011\"\n            },\n            \"Actualizaciones_importantes\": {\n                \"Fecha_Ultimo_Dato\": \"18/09/2020\",\n                \"Fecha_Camara\": \"07/09/2020\"\n            },\n            \"Archivos\": {\n                \"Screenshot_Path\": \"ScreenShots/Pepito_screenshot0.png\",\n                \"Link_Empresa\": \"https://www.einforma.co/servlet/app/portal/ENTP/prod/ETIQUETA_EMPRESA/nif/1700138227200000\"\n            }\n        },\n        \"CREACIONES PEPITO LTDA\": {\n            \"Informacion_Básica\": {\n                \"Forma_Juridica\": \"SOCIEDAD LIMITADA\",\n                \"Departamento\": \"ANTIOQUIA\",\n                \"Actividad_CIIU\": \"C1410 - CONFECCION DE PRENDAS DE VESTIR EXCEPTO PRENDAS DE PIEL\",\n                \"Fecha_Constitucion\": \"02/11/1982\"\n            },\n            \"Actualizaciones_importantes\": {\n                \"Fecha_Ultimo_Dato\": \"07/01/2021\",\n                \"Fecha_Camara\": \"04/01/2021\"\n            },\n            \"Archivos\": {\n                \"Screenshot_Path\": \"ScreenShots/Pepito_screenshot1.png\",\n                \"Link_Empresa\": \"https://www.einforma.co/servlet/app/portal/ENTP/prod/ETIQUETA_EMPRESA/nif/1700043027100000\"\n            }\n        },\n        \"PEPITO P S A S\": {\n            \"Informacion_Básica\": {\n                \"Forma_Juridica\": \"SOCIEDAD POR ACCIONES SIMPLIFICADA\",\n                \"Departamento\": \"BOGOTÁ\",\n                \"Actividad_CIIU\": \"I5611 - EXPENDIO A LA MESA DE COMIDAS PREPARADAS\",\n                \"Fecha_Constitucion\": \"11/10/2019\"\n            },\n            \"Actualizaciones_importantes\": {\n                \"Fecha_Ultimo_Dato\": \"21/01/2021\",\n                \"Fecha_Camara\": \"31/01/2021\"\n            },\n            \"Archivos\": {\n                \"Screenshot_Path\": \"ScreenShots/Pepito_screenshot2.png\",\n                \"Link_Empresa\": \"https://www.einforma.co/servlet/app/portal/ENTP/prod/ETIQUETA_EMPRESA/nif/1700541279200000\"\n            }\n        }\n    }\n}"
+				},
+				{
+					"name": "Respuesta 14 valores sin departamento",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/Empresa?busqueda=Clinica&n=14",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"Empresa"
+							],
+							"query": [
+								{
+									"key": "busqueda",
+									"value": "Clinica"
+								},
+								{
+									"key": "n",
+									"value": "14"
+								},
+								{
+									"key": "departamento",
+									"value": "bogota",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "10947"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/1.0.1 Python/3.7.6"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 23 Feb 2021 14:38:47 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Busqueda\": {\n        \"String Busqueda\": \"Clinica\",\n        \"Id Departamento\": \"00\",\n        \"Departamento\": null,\n        \"Numero Empresas\": 14\n    },\n    \"Informacion\": {\n        \"OFTALMOS S A\": {\n            \"Informacion_Básica\": {\n                \"Forma_Juridica\": \"SOCIEDAD ANONIMA\",\n                \"Departamento\": \"BOGOTÁ\",\n                \"Actividad_CIIU\": \"Q8610 - ACTIVIDADES DE HOSPITALES Y CLINICAS CON INTERNACION\",\n                \"Fecha_Constitucion\": \"03/07/1963\"\n            },\n            \"Actualizaciones_importantes\": {\n                \"Fecha_Ultimo_Dato\": \"11/02/2021\",\n                \"Fecha_Camara\": \"31/01/2021\"\n            },\n            \"Archivos\": {\n                \"Screenshot_Path\": \"ScreenShots/Clinica_screenshot0.png\",\n                \"Link_Empresa\": \"https://www.einforma.co/servlet/app/portal/ENTP/prod/ETIQUETA_EMPRESA/nif/1700010733900000\"\n            }\n        },\n        \"CLINICA ZAYMA S A S\": {\n            \"Informacion_Básica\": {\n                \"Forma_Juridica\": \"SOCIEDAD POR ACCIONES SIMPLIFICADA\",\n                \"Departamento\": \"CÓRDOBA\",\n                \"Actividad_CIIU\": \"Q8610 - ACTIVIDADES DE HOSPITALES Y CLINICAS CON INTERNACION\",\n                \"Fecha_Constitucion\": \"28/08/1989\"\n            },\n            \"Actualizaciones_importantes\": {\n                \"Fecha_Ultimo_Dato\": \"06/11/2020\",\n                \"Fecha_Camara\": \"06/11/2020\"\n            },\n            \"Archivos\": {\n                \"Screenshot_Path\": \"ScreenShots/Clinica_screenshot1.png\",\n                \"Link_Empresa\": \"https://www.einforma.co/servlet/app/portal/ENTP/prod/ETIQUETA_EMPRESA/nif/1700023159800000\"\n            }\n        },\n        \"CLINICA ERASMO LTDA\": {\n            \"Informacion_Básica\": {\n                \"Forma_Juridica\": \"SOCIEDAD LIMITADA\",\n                \"Departamento\": \"CESAR\",\n                \"Actividad_CIIU\": \"Q8610 - ACTIVIDADES DE HOSPITALES Y CLINICAS CON INTERNACION\",\n                \"Fecha_Constitucion\": \"03/10/1997\"\n            },\n            \"Actualizaciones_importantes\": {\n                \"Fecha_Ultimo_Dato\": \"22/12/2020\",\n                \"Fecha_Camara\": \"31/07/2020\"\n            },\n            \"Archivos\": {\n                \"Screenshot_Path\": \"ScreenShots/Clinica_screenshot2.png\",\n                \"Link_Empresa\": \"https://www.einforma.co/servlet/app/portal/ENTP/prod/ETIQUETA_EMPRESA/nif/1700037019600000\"\n            }\n        },\n        \"GRUPO OPERADOR CLINICO HOSPITALARIO POR OUTSOURCING S A S\": {\n            \"Informacion_Básica\": {\n                \"Forma_Juridica\": \"SOCIEDAD POR ACCIONES SIMPLIFICADA\",\n                \"Departamento\": \"VALLE\",\n                \"Actividad_CIIU\": \"Q8610 - ACTIVIDADES DE HOSPITALES Y CLINICAS CON INTERNACION\",\n                \"Fecha_Constitucion\": \"20/02/2013\"\n            },\n            \"Actualizaciones_importantes\": {\n                \"Fecha_Ultimo_Dato\": \"20/10/2020\",\n                \"Fecha_Camara\": \"31/12/2020\"\n            },\n            \"Archivos\": {\n                \"Screenshot_Path\": \"ScreenShots/Clinica_screenshot3.png\",\n                \"Link_Empresa\": \"https://www.einforma.co/servlet/app/portal/ENTP/prod/ETIQUETA_EMPRESA/nif/1700304701400000\"\n            }\n        },\n        \"CLINICA NORTE S A\": {\n            \"Informacion_Básica\": {\n                \"Forma_Juridica\": \"SOCIEDAD ANONIMA\",\n                \"Departamento\": \"NORTE SANTANDER\",\n                \"Actividad_CIIU\": \"Q8610 - ACTIVIDADES DE HOSPITALES Y CLINICAS CON INTERNACION\",\n                \"Fecha_Constitucion\": \"05/12/1968\"\n            },\n            \"Actualizaciones_importantes\": {\n                \"Fecha_Ultimo_Dato\": \"19/02/2021\",\n                \"Fecha_Camara\": \"30/11/2020\"\n            },\n            \"Archivos\": {\n                \"Screenshot_Path\": \"ScreenShots/Clinica_screenshot4.png\",\n                \"Link_Empresa\": \"https://www.einforma.co/servlet/app/portal/ENTP/prod/ETIQUETA_EMPRESA/nif/1700041185300000\"\n            }\n        },\n        \"SOCIEDAD MEDICA RIONEGRO S A SOMER S A\": {\n            \"Informacion_Básica\": {\n                \"Forma_Juridica\": \"SOCIEDAD ANONIMA\",\n                \"Departamento\": \"ANTIOQUIA\",\n                \"Actividad_CIIU\": \"Q8610 - ACTIVIDADES DE HOSPITALES Y CLINICAS CON INTERNACION\",\n                \"Fecha_Constitucion\": \"29/11/1985\"\n            },\n            \"Actualizaciones_importantes\": {\n                \"Fecha_Ultimo_Dato\": \"11/12/2020\",\n                \"Fecha_Camara\": \"22/10/2020\"\n            },\n            \"Archivos\": {\n                \"Screenshot_Path\": \"ScreenShots/Clinica_screenshot5.png\",\n                \"Link_Empresa\": \"https://www.einforma.co/servlet/app/portal/ENTP/prod/ETIQUETA_EMPRESA/nif/1700043631400000\"\n            }\n        },\n        \"CLINICA MEDICOS S A\": {\n            \"Informacion_Básica\": {\n                \"Forma_Juridica\": \"SOCIEDAD ANONIMA\",\n                \"Departamento\": \"CESAR\",\n                \"Actividad_CIIU\": \"Q8610 - ACTIVIDADES DE HOSPITALES Y CLINICAS CON INTERNACION\",\n                \"Fecha_Constitucion\": \"27/01/1997\"\n            },\n            \"Actualizaciones_importantes\": {\n                \"Fecha_Ultimo_Dato\": \"23/11/2020\",\n                \"Fecha_Camara\": \"23/11/2020\"\n            },\n            \"Archivos\": {\n                \"Screenshot_Path\": \"ScreenShots/Clinica_screenshot6.png\",\n                \"Link_Empresa\": \"https://www.einforma.co/servlet/app/portal/ENTP/prod/ETIQUETA_EMPRESA/nif/1700037013200000\"\n            }\n        },\n        \"EDITORA GEMINIS S A S\": {\n            \"Informacion_Básica\": {\n                \"Forma_Juridica\": \"SOCIEDAD POR ACCIONES SIMPLIFICADA\",\n                \"Departamento\": \"BOGOTÁ\",\n                \"Actividad_CIIU\": \"C1811 - ACTIVIDADES DE IMPRESION\",\n                \"Fecha_Constitucion\": \"28/05/1982\"\n            },\n            \"Actualizaciones_importantes\": {\n                \"Fecha_Ultimo_Dato\": \"05/02/2021\",\n                \"Fecha_Camara\": \"31/12/2020\"\n            },\n            \"Archivos\": {\n                \"Screenshot_Path\": \"ScreenShots/Clinica_screenshot7.png\",\n                \"Link_Empresa\": \"https://www.einforma.co/servlet/app/portal/ENTP/prod/ETIQUETA_EMPRESA/nif/1700009771800000\"\n            }\n        },\n        \"PROMOTORA CLINICA ZONA FRANCA DE URABA S A S\": {\n            \"Informacion_Básica\": {\n                \"Forma_Juridica\": \"SOCIEDAD POR ACCIONES SIMPLIFICADA\",\n                \"Departamento\": \"ANTIOQUIA\",\n                \"Actividad_CIIU\": \"Q8610 - ACTIVIDADES DE HOSPITALES Y CLINICAS CON INTERNACION\",\n                \"Fecha_Constitucion\": \"12/10/2010\"\n            },\n            \"Actualizaciones_importantes\": {\n                \"Fecha_Ultimo_Dato\": \"11/09/2020\",\n                \"Fecha_Camara\": \"31/07/2020\"\n            },\n            \"Archivos\": {\n                \"Screenshot_Path\": \"ScreenShots/Clinica_screenshot8.png\",\n                \"Link_Empresa\": \"https://www.einforma.co/servlet/app/portal/ENTP/prod/ETIQUETA_EMPRESA/nif/1700343121600000\"\n            }\n        },\n        \"SOCIEDAD INVERSIONES MEDICAS HUILA S A S\": {\n            \"Informacion_Básica\": {\n                \"Forma_Juridica\": \"SOCIEDAD POR ACCIONES SIMPLIFICADA\",\n                \"Departamento\": \"HUILA\",\n                \"Actividad_CIIU\": \"Q8610 - ACTIVIDADES DE HOSPITALES Y CLINICAS CON INTERNACION\",\n                \"Fecha_Constitucion\": \"16/03/2017\"\n            },\n            \"Actualizaciones_importantes\": {\n                \"Fecha_Ultimo_Dato\": \"28/08/2020\",\n                \"Fecha_Camara\": \"04/09/2020\"\n            },\n            \"Archivos\": {\n                \"Screenshot_Path\": \"ScreenShots/Clinica_screenshot9.png\",\n                \"Link_Empresa\": \"https://www.einforma.co/servlet/app/portal/ENTP/prod/ETIQUETA_EMPRESA/nif/1700452318800000\"\n            }\n        },\n        \"CLINICA OFTALMOLOGICA DEL CARIBE S A S\": {\n            \"Informacion_Básica\": {\n                \"Forma_Juridica\": \"SOCIEDAD POR ACCIONES SIMPLIFICADA\",\n                \"Departamento\": \"ATLÁNTICO\",\n                \"Actividad_CIIU\": \"Q8621 - ACTIVIDADES DE LA PRACTICA MEDICA SIN INTERNACION\",\n                \"Fecha_Constitucion\": \"23/10/1985\"\n            },\n            \"Actualizaciones_importantes\": {\n                \"Fecha_Ultimo_Dato\": \"10/02/2021\",\n                \"Fecha_Camara\": \"31/01/2021\"\n            },\n            \"Archivos\": {\n                \"Screenshot_Path\": \"ScreenShots/Clinica_screenshot10.png\",\n                \"Link_Empresa\": \"https://www.einforma.co/servlet/app/portal/ENTP/prod/ETIQUETA_EMPRESA/nif/1700099270000000\"\n            }\n        },\n        \"CLINICA FEDERMAN\": {\n            \"Informacion_Básica\": {\n                \"Forma_Juridica\": \"ENTIDAD SIN ANIMO DE LUCRO\",\n                \"Departamento\": \"BOGOTÁ\",\n                \"Actividad_CIIU\": \"Z9999 - ACTIVIDAD COMERCIAL / INDUSTRIAL AUN NO DEFINIDA POR INFORMA COLOMBIA\",\n                \"Fecha_Constitucion\": \"21/06/1978\"\n            },\n            \"Actualizaciones_importantes\": {\n                \"Fecha_Ultimo_Dato\": \"24/10/2008\",\n                \"Fecha_Camara\": \"21/06/1978\"\n            },\n            \"Archivos\": {\n                \"Screenshot_Path\": \"ScreenShots/Clinica_screenshot11.png\",\n                \"Link_Empresa\": \"https://www.einforma.co/servlet/app/portal/ENTP/prod/ETIQUETA_EMPRESA/nif/1700158302100000\"\n            }\n        },\n        \"CONGREGACION DE HERMANAS DE CARIDAD DOMINICAS DE LA PRESENTACION DE LA SANTISIMA VIRGEN PROVINCIA DE BOGOTA\": {\n            \"Informacion_Básica\": {\n                \"Forma_Juridica\": \"ENTIDAD SIN ANIMO DE LUCRO\",\n                \"Departamento\": \"BOGOTÁ\",\n                \"Actividad_CIIU\": \"Q8610 - ACTIVIDADES DE HOSPITALES Y CLINICAS CON INTERNACION\",\n                \"Fecha_Constitucion\": \"21/06/1948\"\n            },\n            \"Actualizaciones_importantes\": {\n                \"Fecha_Ultimo_Dato\": \"08/01/2021\",\n                \"Fecha_Camara\": \"22/12/2020\"\n            },\n            \"Archivos\": {\n                \"Screenshot_Path\": \"ScreenShots/Clinica_screenshot12.png\",\n                \"Link_Empresa\": \"https://www.einforma.co/servlet/app/portal/ENTP/prod/ETIQUETA_EMPRESA/nif/1700100967000000\"\n            }\n        },\n        \"FUNDACION ABOOD SHAIO EN REESTRUCTURACION\": {\n            \"Informacion_Básica\": {\n                \"Forma_Juridica\": \"ENTIDAD SIN ANIMO DE LUCRO\",\n                \"Departamento\": \"BOGOTÁ\",\n                \"Actividad_CIIU\": \"Q8610 - ACTIVIDADES DE HOSPITALES Y CLINICAS CON INTERNACION\",\n                \"Fecha_Constitucion\": \"12/04/1956\"\n            },\n            \"Actualizaciones_importantes\": {\n                \"Fecha_Ultimo_Dato\": \"24/11/2020\",\n                \"Fecha_Camara\": \"24/11/2020\"\n            },\n            \"Archivos\": {\n                \"Screenshot_Path\": \"ScreenShots/Clinica_screenshot13.png\",\n                \"Link_Empresa\": \"https://www.einforma.co/servlet/app/portal/ENTP/prod/ETIQUETA_EMPRESA/nif/1700115157700000\"\n            }\n        }\n    }\n}"
+				},
+				{
+					"name": "Respuesta sin parametro requerido",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/Empresa?n=a&departamento=bogota",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"Empresa"
+							],
+							"query": [
+								{
+									"key": "busqueda",
+									"value": "Pepito",
+									"disabled": true
+								},
+								{
+									"key": "n",
+									"value": "a"
+								},
+								{
+									"key": "departamento",
+									"value": "bogota"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "132"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/1.0.1 Python/3.7.6"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 23 Feb 2021 14:45:51 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Codigo\": 901,\n    \"Mensaje\": \"Error en los datos: {'n': ['Not a valid integer.'], 'busqueda': ['Field may not be null.']}\"\n}"
+				}
+			]
+		}
+	]
+}

@@ -127,3 +127,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#Environment variables
+.vscode/
+
+#Results
+ScreenShots/*.png
+log.html
+output.xml
+report.html
+info_Empresas.xlsx
